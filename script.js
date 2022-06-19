@@ -90,7 +90,7 @@ function animarCora(e,dire){
         }
     ],{
         duration:getRandomInt(500,1000),
-        iterations:3,
+        iterations:5,
         delay:getRandomInt(0,100)
     })
 }
