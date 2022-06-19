@@ -235,6 +235,9 @@ button > * {
     .modal__title{
         font-size: 1.5em;
     }
+    .container-pregunta > span{
+        font-size: 1rem;
+    }
 }
 
     

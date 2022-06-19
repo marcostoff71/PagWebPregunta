@@ -105,7 +105,7 @@ function mostrarModal(){
 
 btnNo.addEventListener('mouseover',moverBtnNo);
 btnNo.addEventListener('click',moverBtnNo)
-function moverBtnNo(){
+function moverBtnNo(){                      
     btnNo.style.position='absolute';
     let maxX=window.innerWidth - btnNo.offsetWidth;
     let maxY=window.innerHeight - btnNo.offsetHeight;
