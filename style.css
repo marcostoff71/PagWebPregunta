@@ -72,7 +72,7 @@ body{
 .container-pregunta > span{
     /* text-align: ; */
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color:white;
     letter-spacing: 3px;

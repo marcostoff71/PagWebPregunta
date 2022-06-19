@@ -59,17 +59,17 @@ btnSi.addEventListener('click',()=>{
         modal.classList.remove('modal--show');
         
     },2000);
-    // setTimeout(()=>{
+    setTimeout(()=>{
 
-    //     mandarMensaje();
-    // },5000);
+        mandarMensaje();
+    },5000);
 
 
 })
 
 function mandarMensaje(){
     
-    // let url="https://wa.me/525520787346?text=Mira"
+    let url="https://wa.me/525520787346?text=Mira"
     abrirNuevoTab(url);
 }
 function abrirNuevoTab(url) {
