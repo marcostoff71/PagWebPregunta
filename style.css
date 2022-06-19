@@ -207,8 +207,9 @@ button > * {
     height: 100vh;
     transform: scale(0);
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     pointer-events: none;
     transition: all .3s;
     opacity: 0;;
@@ -230,7 +231,7 @@ button > * {
 
 @media screen and  (max-width: 768px){
     .container-cora{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .modal__title{
         font-size: 1.5em;

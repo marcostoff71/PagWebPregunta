@@ -17,10 +17,10 @@ const menDer=document.getElementById('conte-rigth')
 
 function crearNodo(can){
     let containerCora =document.createElement('div');
-    containerCora.style.animationDelay=`${getRandomInt(0,can)*0.1}s`;
+    containerCora.style.animationDelay=`${getRandomInt(1,can)*0.3}s`;
     containerCora.classList.add('container-cora');
-    containerCora.innerHTML="&#9829;";
-    containerCora.style.fontSize='1.3rem'
+    containerCora.innerHTML=`<i class="fa-solid fa-heart"></i>`;
+    containerCora.style.fontSize='1rem'
     containerCora.style.pointerEvents='none'
     return containerCora;
 }
@@ -38,7 +38,7 @@ function llenarElementos(can){
     }
 
 }
-llenarElementos(30);
+llenarElementos(20);
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
@@ -59,17 +59,17 @@ btnSi.addEventListener('click',()=>{
         modal.classList.remove('modal--show');
         
     },2000);
-    setTimeout(()=>{
+    // setTimeout(()=>{
 
-        mandarMensaje();
-    },5000);
+    //     mandarMensaje();
+    // },5000);
 
 
 })
 
 function mandarMensaje(){
     
-    let url="https://wa.me/525520787346?text=Mira"
+    // let url="https://wa.me/525520787346?text=Mira"
     abrirNuevoTab(url);
 }
 function abrirNuevoTab(url) {
