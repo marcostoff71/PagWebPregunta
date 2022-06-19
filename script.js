@@ -20,7 +20,7 @@ function crearNodo(can){
     containerCora.style.animationDelay=`${getRandomInt(0,can)*0.1}s`;
     containerCora.classList.add('container-cora');
     containerCora.innerHTML="&#9829;";
-    containerCora.style.fontSize='1.5rem'
+    containerCora.style.fontSize='1.3rem'
     containerCora.style.pointerEvents='none'
     return containerCora;
 }
@@ -69,7 +69,7 @@ btnSi.addEventListener('click',()=>{
 
 function mandarMensaje(){
     
-    let url="https://wa.me/5520787346?text=Mira"
+    let url="https://wa.me/525520787346?text=Mira"
     abrirNuevoTab(url);
 }
 function abrirNuevoTab(url) {
@@ -103,7 +103,9 @@ function mostrarModal(){
     modal.classList.add("modal--show");
 }
 
-btnNo.addEventListener('mouseover',(e)=>{
+btnNo.addEventListener('mouseover',moverBtnNo);
+btnNo.addEventListener('click',moverBtnNo)
+function moverBtnNo(){
     btnNo.style.position='absolute';
     let maxX=window.innerWidth - btnNo.offsetWidth;
     let maxY=window.innerHeight - btnNo.offsetHeight;
@@ -116,4 +118,4 @@ btnNo.addEventListener('mouseover',(e)=>{
 
 
     console.table({x,y});
-});
+}
