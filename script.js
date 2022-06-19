@@ -20,7 +20,7 @@ function crearNodo(can){
     containerCora.style.animationDelay=`${getRandomInt(0,can)*0.1}s`;
     containerCora.classList.add('container-cora');
     containerCora.innerHTML="&#9829;";
-    containerCora.style.fontSize='1rem'
+    containerCora.style.fontSize='1.5rem'
     containerCora.style.pointerEvents='none'
     return containerCora;
 }
